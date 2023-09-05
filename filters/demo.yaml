@@ -19,7 +19,7 @@
 
   - name: split
     debug:
-      msg: "{{ Greeting |  split(",") }}"
+      msg: "{{ Greeting |  split(',') }}"
 
   # - name: printing undefined variable
   #   debug:
