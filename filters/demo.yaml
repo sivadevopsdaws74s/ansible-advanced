@@ -3,6 +3,7 @@
   vars:
     NAME: Sivakumar Reddy
     website: https://www.joindevops.com/batch-74s
+    Greeting: Hello Ramesh, How are you
   tasks:
   - name: convert into upper case
     debug:
@@ -15,6 +16,10 @@
   - name: extract hostname
     debug:
       msg: "{{ website | urlsplit('hostname') }}"
+
+  - name: split
+    debug:
+      msg: "{{ Greeting |  split(",") }}"
 
   # - name: printing undefined variable
   #   debug:
