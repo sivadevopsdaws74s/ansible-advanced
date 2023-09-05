@@ -10,8 +10,8 @@
 
   - name: convert into lower case
     debug:
-      msg: "Hello {{ NAME | lower }}"
+      msg: "{{ some_variable | default(5) }}"
 
-  - name: printing undefined variable
-    debug:
-      msg: "Course is {{ COURSE | default("DevOps") }}"
+  # - name: printing undefined variable
+  #   debug:
+  #     msg: "Course is {{ COURSE | default("DevOps") }}"
