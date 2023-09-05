@@ -9,7 +9,7 @@
 
   - name: convert into lower case
     debug:
-      msg: "{{ COURSE | default(DevOps) }}"
+      msg: "{{ COURSE | default('DevOps') }}"
 
   # - name: printing undefined variable
   #   debug:
